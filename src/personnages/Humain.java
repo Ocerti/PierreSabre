@@ -21,12 +21,12 @@ public class Humain {
 	}
 	
 	
-	private int gagnerArgent(int gain) {
+	protected int gagnerArgent(int gain) {
 		assert gain >= 0 ;
 		return argent += gain;
 	}
 	
-	private int perdreArgent(int perte) {
+	protected int perdreArgent(int perte) {
 		assert perte >= 0 ;
 		return argent -= perte ;
 	}
@@ -36,12 +36,12 @@ public class Humain {
 
 	//}
 	
-	private void parler(String texte) {
+	public void parler(String texte) {
 		System.out.println("« " + texte + "»");
 	}
 
 	public void direBonjour() {
-		parler("Bonjour ! Je m'appelle "+ nom + " et j'aime boire du" + boissonFavorite)  ;
+		parler("Bonjour ! Je m'appelle "+ nom + " et j'aime boire du " + boissonFavorite)  ;
 	}
 	
 	public void boire() {
