@@ -10,6 +10,24 @@ public class Yakuza extends Humain {
 		this.rp=0;	
 	}
 	
+	public int getRp() {
+		return rp;
+	}
+	
+	
+	public void perdre() {
+		perdreArgent(getArgent());
+		rp -= 1;
+		parler("j'ai tous perdu");
+	}
+	
+	public void gagner(int gain) {
+		gagnerArgent(gain);
+		rp += 1;
+		parler("j'ai gagné");
+	}
+	
+	
 	public void extorquer(Commerçant victime) {
 		parler("Un faible marchand ?");
 		parler(victime.getNom() + " donne moi ton argent");

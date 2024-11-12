@@ -7,7 +7,7 @@ public class Commerçant extends Humain{
 	}
 		
 	public int seFaireExtorquer() {
-		parler("le monde est vraiment trop injuste");
+		parler("le monde est vraiment tr0p injuste");
 		return perdreArgent(getArgent());
 	}
 	
